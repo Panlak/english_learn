@@ -1,0 +1,22 @@
+
+
+
+
+
+<%= simple_form_for @dictionary, url: '/dictionary/create', method: :post do |form| %>
+
+<div class="field">
+    <%= form.label :word %><br />
+    <%= form.text_field :word%>
+  </div>
+
+  <div class="field">
+    <%= form.label :translate %><br />
+    <%= form.text_field :translate %>
+  </div>
+
+   <div>
+    <%= form.submit "Write" %>
+   </div>
+
+<%end%>

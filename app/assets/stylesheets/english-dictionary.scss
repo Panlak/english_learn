@@ -1,0 +1,135 @@
+  
+.dictionary-english{
+    width: 700px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+
+
+ 
+      
+
+
+
+    #table-dictionary-english_filter{
+        input{display: none;}
+    }
+}
+.dictionary-english-page{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-page-english{
+    margin-bottom: 40px;
+}
+
+.regular-irregular{
+    width:800px;
+}
+
+.dictionary-edit-form{
+    width: 350px;
+    height: 200px;
+    background-color: azure;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    
+    .dictionary-edit-block{
+        margin-bottom: 20px;
+        input{
+            height: 20px;
+            width: 250px;
+            
+
+        }
+    }
+    .dictionary-edit-buttons{
+        display: flex;
+        justify-content: flex-end;
+
+    }
+    a{
+        padding: 5px;
+    }
+    a:nth-child(1){
+        color: red;
+    }
+    a:nth-child(2){
+        color: green;
+    }
+}
+.write-new-word{
+    text-decoration: none;
+    color: white !important;
+    background-color: #68A357;
+    padding: 20px;
+    height: 50px;
+  
+}
+#table-dictionary-english{
+
+}
+
+
+.search-box{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+  }
+  .input-search{
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: #22a6b3;
+    padding-right: 40px;
+    color:black;
+  }
+  .input-search::placeholder{
+    color:rgba(97, 218, 86, 0.5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+  .btn-search{
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color:#ffffff ;
+    background-color:transparent;
+    pointer-events: painted;  
+  }
+  .btn-search:focus ~ .input-search{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(3, 255, 234, 0.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  .input-search:focus{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(3, 255, 234, 0.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  
+  

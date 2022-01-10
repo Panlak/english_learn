@@ -1,0 +1,8 @@
+class RegularIrregularVerb < ApplicationRecord
+
+
+
+
+
+
+end

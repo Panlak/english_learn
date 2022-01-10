@@ -1,0 +1,46 @@
+
+
+
+
+<div class="regular-irregular">
+<table id="table-dictionary-english" >
+            <thead>
+            <tr>
+                <th>verb</th>
+                <th>Past Simple</th>
+                <th>Past Participle</th>
+                <th>Переклад</th>
+            </tr>
+            </thead>
+        </table>
+
+</div>
+
+
+
+<script>
+
+
+$(document).ready(function(){
+                
+    let table = $("#table-dictionary-english").DataTable(
+                {   "bInfo" : false,
+                    "info": false,
+                    "lengthChange": false,
+                    "paging": false,
+                    "ajax": 
+                    {"url": "/dictionary/regular_irregular_verbs.json"},
+                   
+                    "columns":[
+                    {"data": "first_form"},
+                    {"data": "second_form"},
+                    {"data": "third_form"},
+                    {"data": "translate"}
+                    ]
+                });
+});
+
+
+
+
+</script>

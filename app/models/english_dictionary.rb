@@ -1,0 +1,3 @@
+class EnglishDictionary < ApplicationRecord
+    
+end

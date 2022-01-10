@@ -1,0 +1,38 @@
+
+
+
+
+<div class="english-dictionary-content">
+<h3 class ="logo-page-english">English Dictionary</h3>
+    <%= link_to 'Write new word', '/dictionary/new', method: :get ,class: "write-new-word"%>
+    <%= link_to 'Save Dictionary', '/dictionary/save_dictionary.csv', method: :get ,class: "write-new-word"%>
+
+    <div class="dictionary-english-page">
+    
+    <div class="dictionary-english">
+        <table id="table-dictionary-english" class="table">
+  <div class="search-box">
+    <button class="btn-search"><i class="fas fa-search"></i></button>
+    <input type="text" class="input-search" placeholder="Type to Search..." id="myInputTextField">
+  </div>
+                <thead>              
+                <tr>
+                    <th>id</th>
+                    <th>Word</th>
+                    <th>Translate</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+            
+                </tr>
+                </thead>
+            </table>
+    </div>
+    <%= image_tag('/assets/learnEnglish.jpg')%>
+
+</div>
+</div>
+<script src="https://kit.fontawesome.com/85b07c1155.js" crossorigin="anonymous"></script>
+
+<script>
+    dictionarytable()
+</script>
