@@ -15,8 +15,10 @@
     padding: 20px;
 }
 .navbar-options{
-    background: rgb(2,0,36);
-    background: linear-gradient(-96deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(6,157,160,1)74%, rgba(0,212,255,1) 100%); 
+    background: #fffbd5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #b20a2c, #fffbd5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #b20a2c, #fffbd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     height: 100vh;
     overflow: auto;
     overflow-x: hidden;
@@ -33,14 +35,17 @@
     li {
         color: white;
         list-style: none;
-        margin-top: 15px;
+       
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 300px;
         span{
             font-size: 28px;
             
         }
         a{
             text-decoration:none;
-            font-size: 19px;
+            font-size: 22px;
             color: white;
            
         }
@@ -55,11 +60,20 @@
     margin-left: 300px;
     display: n;
     .login-bar{
-
+        span{
+        
+            text-decoration: none;
+            line-height: 18px;
+            font-size: 24px;
+            font-weight: bold;
+            color: whitesmoke;
+            background-color: #424874;
+            padding: 20px;
+        }
         display: flex;
         justify-content: space-between;
         align-items: center;
-        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        box-shadow: rgba(255, 255, 255, 0.15) 0px 48px 100px 0px;
         .login-links{
             margin-right: 20px;
             display: flex;
@@ -73,24 +87,16 @@
             }
         }        
     }
-    span{
-        
-        text-decoration: none;
-        line-height: 18px;
-        font-size: 24px;
-        font-weight: bold;
-        color: whitesmoke;
-        background-color: #424874;
-        padding: 20px;
-    }
+   
 }
 
 .english-menu{
     display: flex;
     
-    background: rgb(2,0,36);
-    background: linear-gradient(-96deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(6,157,160,1)74%, rgba(0,212,255,1) 100%); 
-      
+    background: #fffbd5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b20a2c, #fffbd5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b20a2c, #fffbd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     li{
         transition: 0.2s;
 
@@ -99,8 +105,8 @@
         width: 150px;
         display: flex;
         justify-content: center;
-        border-right:1px black solid;
-        border-left:1px black solid;
+        border-right:1px white solid;
+        border-left:1px white solid;
         margin-left: 20px;
        
         opacity: 90%;
@@ -123,7 +129,7 @@
     font-size: 24px;
     position: fixed;
     bottom: 0;
-    left: 230px;
+    left: 238px;
     cursor: pointer;
     background-color: #424874;
     padding: 20px;

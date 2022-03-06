@@ -1,17 +1,5 @@
 
 
-document.addEventListener("turbolinks:load", function () {
-   $(document).ready(function(){
-      divSearch = document.getElementById("table-dictionary-english_filter")
-      button = document.createElement('button')
-      button.classList = "btn-search"
-      button.innerHTML = `<i class="fas fa-search"></i>`
-      divSearch.firstChild.prepend(button);
-    
-   })
- })
-
-
 $(document).on("click","#leyout-left-menu",function(){
    let hideLeftButton = document.getElementById("leyout-left-menu");
    console.log(hideLeftButton .innerHTML.toString())
@@ -38,7 +26,7 @@ $(document).on("click","#leyout-left-menu",function(){
          $(".right-menu").css("margin-left","300px")
       
          $("#leyout-left-menu").css({
-            "left":"230px"
+            "left":"238px"
          })
          hideLeftButton.innerHTML = '<<';
    }
@@ -52,14 +40,23 @@ dictionarytable = () => $("#table-dictionary-english").ready(function(){
       "bInfo" : false,
       "info": false,
       "lengthChange": false,
-      "paging": false,
+      "paging": true,
+      "pagingType": "simple",
       "oLanguage": {
          "sSearch": "",
         
        },
+       
        language: {
-         searchPlaceholder: "Search records"
+         searchPlaceholder: "Search records",
+        
+         paginate: {
+            
+            next: '<span class="glyphicon glyphicon-menu-right">Next</span>',
+            previous: '<span class="glyphicon glyphicon-menu-left">Back</span>'
+        }
      },
+     
           "ajax": {
           "url": "/dictionary/index.json"
       },
@@ -157,9 +154,7 @@ dictionarytable = () => $("#table-dictionary-english").ready(function(){
 
 
 var EditForm = {
-   open (options) {
-
-      
+   open (options) {  
       options = Object.assign({}, {
          title: '',
          message: '',

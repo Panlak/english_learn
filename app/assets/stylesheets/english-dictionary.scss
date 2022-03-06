@@ -3,22 +3,25 @@
     width: 700px;
     margin-top: 60px;
     margin-bottom: 20px;
-
-
- 
-      
-
-
-
     #table-dictionary-english_filter{
         input{display: none;}
     }
 }
-.dictionary-english-page{
+#table-dictionary-english_paginate{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    a{
+        text-decoration: none;
+        color: white !important;
+        background-color: #68A357;
+        padding: 15px;
+        margin-left: 15px;
+        cursor: pointer;
+    }
 }
-
+#table-dictionary-english_wrapper{
+    height: 600px;
+}
 .logo-page-english{
     margin-bottom: 40px;
 }
@@ -71,9 +74,6 @@
     padding: 20px;
     height: 50px;
   
-}
-#table-dictionary-english{
-
 }
 
 

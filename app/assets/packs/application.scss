@@ -1,6 +1,14 @@
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+}
+a{
+    font-weight: 400;
+}
 @import "../stylesheets//layout.scss";
 @import "../stylesheets/warning.scss";
 @import "../stylesheets/english-dictionary.scss";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 @import "../stylesheets/reset.scss";
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');

@@ -1,0 +1,36 @@
+<span>Dictionary Test</span>
+
+<button id="generate-dictionary-test">Start</button>
+
+<div class = "dictionary-english-test">
+
+</div>
+
+
+<script>
+   let buttonStart = document.getElementById("generate-dictionary-test");
+   
+   generateTest = () =>{
+       
+       let englishTest = new EnglishTest();
+       let word = englishTest.GetWord();
+       console.log(word)
+
+       
+       blockDiv.innerHTML = html
+   }
+   nextWord = () =>
+   {
+
+       let currentWord = document.getElementById("test-word");
+       let answer = document.getElementById("user-answer-english-test")
+       console.log(answer)
+       if(currentWord.innerHTML == answer.value){
+           console.log("true")
+       }
+               
+   }
+    buttonStart.addEventListener("click", generateTest, false);
+
+
+</script>

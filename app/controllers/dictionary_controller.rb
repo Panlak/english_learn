@@ -24,6 +24,15 @@ class DictionaryController < ApplicationController
       end
   end
 
+  def english_tests
+    @words = EnglishDictionary.all.sample
+
+    respond_to do |format|
+      format.html  
+      format.json { render json: {data: @words }    }
+    end
+  end
+
   def new
     @dictionary = EnglishDictionary.new
 
